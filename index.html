@@ -469,13 +469,13 @@ footer.dashboard-footer{
   <div class="tab-panel" id="panel-HOMEOWNERS"></div>
 
   <footer class="dashboard-footer">
-    Data as of Oct 6, 2026 · Covers January–September 2026 (select month above) · Meta pulled via Ads Manager (act 1057546444579572) · Adobe pulled via Content Performance Dashboard (Analysis Workspace) · RollWorks pulled via AdRoll ABM Campaigns &amp; Playbooks (advertisable MQIH2GT23FAYXPRQCYQCDZ) · Google Ads pulled via Google Ads UI · LinkedIn pulled via Campaign Manager (account 510706416, DBS 2026 campaign group — HEATINS &amp; HVRINS ad sets only)
+    Data as of Nov 4, 2026 · Covers January–October 2026 (select month above) · Meta pulled via Ads Manager (act 1057546444579572) · Adobe pulled via Content Performance Dashboard (Analysis Workspace) · RollWorks pulled via AdRoll ABM Campaigns &amp; Playbooks (advertisable MQIH2GT23FAYXPRQCYQCDZ) · Google Ads pulled via Google Ads UI · LinkedIn pulled via Campaign Manager (account 510706416, DBS 2026 campaign group — HEATINS &amp; HVRINS ad sets only)
   </footer>
 </div>
 
 <script>
 /* ==================== EMBEDDED DATA ==================== */
-const MONTH_KEYS = ["2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"];
+const MONTH_KEYS = ["2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10"];
 const MONTH_META = {
   "2026-01": { short: "Jan 2026", period: "January 1 – 31, 2026" },
   "2026-02": { short: "Feb 2026", period: "February 1 – 28, 2026" },
@@ -485,9 +485,10 @@ const MONTH_META = {
   "2026-06": { short: "Jun 2026", period: "June 1 – 30, 2026" },
   "2026-07": { short: "Jul 2026", period: "July 1 – 31, 2026" },
   "2026-08": { short: "Aug 2026", period: "August 1 – 31, 2026" },
-  "2026-09": { short: "Sep 2026", period: "September 1 – 30, 2026" }
+  "2026-09": { short: "Sep 2026", period: "September 1 – 30, 2026" },
+  "2026-10": { short: "Oct 2026", period: "October 1 – 31, 2026" }
 };
-const DEFAULT_MONTH_KEY = "2026-09";
+const DEFAULT_MONTH_KEY = "2026-10";
 let PERIOD;
 let CURRENT_MONTH_KEY;
 /* Summary-tab-only view controls — independent of the month selector above, which still drives the campaign tabs */
@@ -4081,6 +4082,346 @@ const DATA_BY_MONTH = {
 
 /* Extra Meta metrics (reach, frequency, CPM, link clicks, link CTR/CPC, landing page views, post engagements) from Meta Ads Manager, merged into each month's meta object.
    Boosting Canada Apr/May combines two campaigns: reach is summed (may slightly overstate unique reach); frequency, CPM, CPC and CTR are recomputed from the sums. */
+DATA_BY_MONTH["2026-10"] = {
+ "BOOSTING": {
+  "label": "Pressure Boosting",
+  "accutics": "BOOSTING (DBSBOOSTINS)",
+  "markets": {
+   "USA": {
+    "ran": false,
+    "meta": {
+     "spend": 0,
+     "impressions": 0,
+     "clicksAll": 0,
+     "ctrAll": 0,
+     "cpcAll": 0
+    },
+    "adobe": {
+     "pending": true
+    },
+    "rollworks": {
+     "pending": true
+    },
+    "googleAds": {
+     "pending": true
+    },
+    "reason": "The Boosting campaign ended before October 2026 and did not run this month (confirmed by Zach)."
+   },
+   "CA": {
+    "ran": false,
+    "meta": {
+     "spend": 0,
+     "impressions": 0,
+     "clicksAll": 0,
+     "ctrAll": 0,
+     "cpcAll": 0
+    },
+    "adobe": {
+     "pending": true
+    },
+    "rollworks": {
+     "pending": true
+    },
+    "googleAds": {
+     "pending": true
+    },
+    "reason": "The Boosting campaign ended before October 2026 and did not run this month (confirmed by Zach)."
+   }
+  }
+ },
+ "HVRINS": {
+  "label": "Hot Water Recirculation",
+  "accutics": "HVRINS (DBSHVRINS)",
+  "markets": {
+   "USA": {
+    "ran": true,
+    "meta": {
+     "spend": 745.41,
+     "impressions": 356148,
+     "clicksAll": 702,
+     "ctrAll": 0.197,
+     "cpcAll": 1.06,
+     "reach": 317983,
+     "frequency": 1.12,
+     "cpm": 2.09,
+     "linkClicks": 459,
+     "linkCtr": 0.13,
+     "costPerLinkClick": 1.62,
+     "landingPageViews": 182,
+     "postEngagement": 577
+    },
+    "adobe": {"visits": 6639, "newVisitsPct": 34, "uniqueVisitors": 3813, "pvPerVisit": 1.49, "bounceRate": 12.1, "totalEngagePI": 3939, "engagesPerVisit": 0.59, "lastTouch": [{"source": "Google search", "visits": 5389, "newPct": 24, "uv": 2777, "pv": 1.84, "bounce": 3.72, "engagePI": 3931, "epv": 0.73}, {"source": "Display Networks", "visits": 1038, "newPct": 71, "uv": 826, "pv": 0.0, "bounce": 39.98, "engagePI": 3, "epv": 0.0}, {"source": "Facebook/Instagram", "visits": 212, "newPct": 99, "uv": 210, "pv": 0.0, "bounce": 89.62, "engagePI": 5, "epv": 0.02}], "engagePITotal": {"visits": 6639, "video50": 89, "downloads": 1217, "training": 63, "formSubmits": 34, "productSelection": 2509, "marketingPermissions": 14, "myGrundfos": 8, "configs": 5, "totalEngage": 3939, "epv": 0.59, "ecommerceLeads": 20}, "engagePIBySource": [{"source": "Google search", "visits": 5389, "video50": 85, "downloads": 1214, "training": 63, "formSubmits": 33, "productSelection": 2509, "marketingPermissions": 14, "myGrundfos": 8, "configs": 5, "totalEngage": 3931, "epv": 0.73, "ecommerceLeads": 20}, {"source": "Display Networks", "visits": 1038, "video50": 0, "downloads": 3, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 3, "epv": 0, "ecommerceLeads": 0}, {"source": "Facebook/Instagram", "visits": 212, "video50": 4, "downloads": 0, "training": 0, "formSubmits": 1, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 5, "epv": 0.02, "ecommerceLeads": 0}]},
+    "rollworks": {
+     "spend": 4892.27,
+     "impressions": 452501,
+     "clicks": 1208,
+     "ctr": 0.267,
+     "cpc": 4.05,
+     "conversions": 276,
+     "breakdown": [
+      {
+       "type": "Website Retargeting",
+       "campaign": "HVRINS-DBDHWR_GPU_AMERICAS_AWARE_EST-4541-RT",
+       "status": "Running",
+       "spend": 978.42,
+       "impressions": 39473,
+       "clicks": 19,
+       "conversions": 60,
+       "ctr": 0.048,
+       "cpc": 51.5
+      },
+      {
+       "type": "Account Targeting",
+       "campaign": "HVRINS-DBDHWR_GPU_AMERICAS_AWARE_EST-4541",
+       "status": "Running",
+       "spend": 3913.85,
+       "impressions": 413028,
+       "clicks": 1189,
+       "conversions": 216,
+       "ctr": 0.288,
+       "cpc": 3.29
+      }
+     ]
+    },
+    "googleAds": {
+     "campaign": "2026_DBS_DBSHVRINS_W01-49_GOOGLE_GPU_AMERICAS_AWARE_KAZOO_EST-4541-GPU",
+     "status": "Running",
+     "spend": 1075.81,
+     "impressions": 16500,
+     "clicks": 3357,
+     "ctr": 20.35,
+     "cpc": 0.32,
+     "cpm": 65.2,
+     "conversions": 34397.44,
+     "convRate": 1024.65,
+     "costPerConv": 0.03,
+     "searchImprShare": 12.7
+    },
+    "linkedin": {
+     "spend": 0,
+     "impressions": 0,
+     "clicks": 0
+    }
+   },
+   "CA": {
+    "ran": true,
+    "meta": {
+     "spend": 1057.13,
+     "impressions": 660196,
+     "clicksAll": 974,
+     "ctrAll": 0.148,
+     "cpcAll": 1.09,
+     "reach": 563144,
+     "frequency": 1.17,
+     "cpm": 1.6,
+     "linkClicks": 707,
+     "linkCtr": 0.11,
+     "costPerLinkClick": 1.5,
+     "landingPageViews": 379,
+     "postEngagement": 1657
+    },
+    "adobe": {"visits": 2592, "newVisitsPct": 36, "uniqueVisitors": 1498, "pvPerVisit": 1.47, "bounceRate": 23.69, "totalEngagePI": 893, "engagesPerVisit": 0.34, "lastTouch": [{"source": "Google search", "visits": 1991, "newPct": 18, "uv": 931, "pv": 1.91, "bounce": 5.17, "engagePI": 892, "epv": 0.45}, {"source": "Facebook/Instagram", "visits": 423, "newPct": 100, "uv": 422, "pv": 0.0, "bounce": 92.43, "engagePI": 1, "epv": 0.0}, {"source": "Display Networks", "visits": 178, "newPct": 77, "uv": 146, "pv": 0.0, "bounce": 67.98, "engagePI": 0, "epv": 0.0}], "engagePITotal": {"visits": 2592, "video50": 20, "downloads": 316, "training": 4, "formSubmits": 19, "productSelection": 521, "marketingPermissions": 9, "myGrundfos": 4, "configs": 0, "totalEngage": 893, "epv": 0.34, "ecommerceLeads": 0}, "engagePIBySource": [{"source": "Google search", "visits": 1991, "video50": 19, "downloads": 316, "training": 4, "formSubmits": 19, "productSelection": 521, "marketingPermissions": 9, "myGrundfos": 4, "configs": 0, "totalEngage": 892, "epv": 0.45, "ecommerceLeads": 0}, {"source": "Facebook/Instagram", "visits": 423, "video50": 1, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 1, "epv": 0.0, "ecommerceLeads": 0}, {"source": "Display Networks", "visits": 178, "video50": 0, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 0, "epv": 0.0, "ecommerceLeads": 0}]},
+    "rollworks": {
+     "spend": 1661.76,
+     "impressions": 162849,
+     "clicks": 201,
+     "ctr": 0.123,
+     "cpc": 8.27,
+     "conversions": 54,
+     "breakdown": [
+      {
+       "type": "Website Retargeting",
+       "campaign": "HVRINS-DBDHWR_GCA_AMERICAS_AWARE_EST-4540-RT",
+       "status": "Running",
+       "spend": 332.35,
+       "impressions": 15858,
+       "clicks": 13,
+       "conversions": 42,
+       "ctr": 0.082,
+       "cpc": 25.57
+      },
+      {
+       "type": "Account Targeting",
+       "campaign": "HVRINS-DBDHWR_GCA_AMERICAS_AWARE_EST-4540",
+       "status": "Running",
+       "spend": 1329.41,
+       "impressions": 146991,
+       "clicks": 188,
+       "conversions": 12,
+       "ctr": 0.128,
+       "cpc": 7.07
+      }
+     ]
+    },
+    "googleAds": {
+     "campaign": "2026_DBS_DBSHVRINS_W01-49_GOOGLE_GCA_AMERICAS_AWARE_KAZOO_EST-4540-GCA",
+     "status": "Running",
+     "spend": 436.82,
+     "impressions": 8666,
+     "clicks": 2187,
+     "ctr": 25.24,
+     "cpc": 0.2,
+     "cpm": 50.41,
+     "conversions": 16712,
+     "convRate": 764.15,
+     "costPerConv": 0.03,
+     "searchImprShare": 21.15
+    },
+    "linkedin": {
+     "spend": 0,
+     "impressions": 0,
+     "clicks": 0
+    }
+   }
+  }
+ },
+ "HEATINS": {
+  "label": "HVAC",
+  "accutics": "HEATINS (DBSHEATINS)",
+  "markets": {
+   "USA": {
+    "ran": true,
+    "meta": {
+     "spend": 1231.12,
+     "impressions": 375099,
+     "clicksAll": 885,
+     "ctrAll": 0.236,
+     "cpcAll": 1.39,
+     "reach": 88643,
+     "frequency": 4.23,
+     "cpm": 3.28,
+     "linkClicks": 633,
+     "linkCtr": 0.17,
+     "costPerLinkClick": 1.94,
+     "landingPageViews": 456,
+     "postEngagement": 652
+    },
+    "adobe": {"visits": 6519, "newVisitsPct": 40, "uniqueVisitors": 3729, "pvPerVisit": 2.6, "bounceRate": 19.4, "totalEngagePI": 2831, "engagesPerVisit": 0.43, "lastTouch": [{"source": "Google search", "visits": 4689, "newPct": 23, "uv": 2136, "pv": 3.61, "bounce": 4.36, "engagePI": 2827, "epv": 0.6}, {"source": "Display Networks", "visits": 1341, "newPct": 77, "uv": 1109, "pv": 0.01, "bounce": 43.48, "engagePI": 4, "epv": 0.0}, {"source": "Facebook/Instagram", "visits": 489, "newPct": 98, "uv": 484, "pv": 0.0, "bounce": 97.96, "engagePI": 0, "epv": 0.0}], "engagePITotal": {"visits": 6519, "video50": 47, "downloads": 998, "training": 26, "formSubmits": 51, "productSelection": 1675, "marketingPermissions": 17, "myGrundfos": 9, "configs": 8, "totalEngage": 2831, "epv": 0.43, "ecommerceLeads": 14}, "engagePIBySource": [{"source": "Google search", "visits": 4689, "video50": 47, "downloads": 994, "training": 26, "formSubmits": 51, "productSelection": 1675, "marketingPermissions": 17, "myGrundfos": 9, "configs": 8, "totalEngage": 2827, "epv": 0.6, "ecommerceLeads": 14}, {"source": "Display Networks", "visits": 1341, "video50": 0, "downloads": 4, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 4, "epv": 0.0, "ecommerceLeads": 0}, {"source": "Facebook/Instagram", "visits": 489, "video50": 0, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 0, "epv": 0.0, "ecommerceLeads": 0}]},
+    "rollworks": {
+     "spend": 5268.73,
+     "impressions": 390374,
+     "clicks": 1360,
+     "ctr": 0.348,
+     "cpc": 3.87,
+     "conversions": 237,
+     "breakdown": [
+      {
+       "type": "Website Retargeting",
+       "campaign": "HEATINS-DBDH_GPU_AMERICAS_AWARE_EST-4539-RE",
+       "status": "Running",
+       "spend": 1051.59,
+       "impressions": 31506,
+       "clicks": 26,
+       "conversions": 106,
+       "ctr": 0.083,
+       "cpc": 40.45
+      },
+      {
+       "type": "Account Targeting",
+       "campaign": "HEATINS-DBDH_GPU_AMERICAS_AWARE_EST-4539",
+       "status": "Running",
+       "spend": 4217.14,
+       "impressions": 358868,
+       "clicks": 1334,
+       "conversions": 131,
+       "ctr": 0.372,
+       "cpc": 3.16
+      }
+     ]
+    },
+    "googleAds": {
+     "campaign": "2026_DBS_DBSHEATINS_W01-53_GOOGLE_GPU_AMERICAS_AWARE_KAZOO_EST-4539-GPU",
+     "status": "Running",
+     "spend": 996.34,
+     "impressions": 10418,
+     "clicks": 1982,
+     "ctr": 19.02,
+     "cpc": 0.5,
+     "cpm": 95.64,
+     "conversions": 27433.44,
+     "convRate": 1384.13,
+     "costPerConv": 0.04,
+     "searchImprShare": 14.78
+    },
+    "linkedin": {
+     "spend": 0,
+     "impressions": 0,
+     "clicks": 0
+    }
+   },
+   "CA": {
+    "ran": true,
+    "meta": {
+     "spend": 802.55,
+     "impressions": 211186,
+     "clicksAll": 727,
+     "ctrAll": 0.344,
+     "cpcAll": 1.1,
+     "reach": 20450,
+     "frequency": 10.33,
+     "cpm": 3.8,
+     "linkClicks": 540,
+     "linkCtr": 0.26,
+     "costPerLinkClick": 1.49,
+     "landingPageViews": 323,
+     "postEngagement": 588
+    },
+    "adobe": {"visits": 2145, "newVisitsPct": 41, "uniqueVisitors": 1346, "pvPerVisit": 1.08, "bounceRate": 34.69, "totalEngagePI": 935, "engagesPerVisit": 0.44, "lastTouch": [{"source": "Google search", "visits": 1426, "newPct": 16, "uv": 663, "pv": 1.61, "bounce": 6.81, "engagePI": 933, "epv": 0.65}, {"source": "Display Networks", "visits": 364, "newPct": 90, "uv": 343, "pv": 0.07, "bounce": 82.37, "engagePI": 1, "epv": 0}, {"source": "Facebook/Instagram", "visits": 356, "newPct": 94, "uv": 342, "pv": 0, "bounce": 98.03, "engagePI": 1, "epv": 0}], "engagePITotal": {"visits": 2145, "video50": 12, "downloads": 217, "training": 4, "formSubmits": 14, "productSelection": 674, "marketingPermissions": 11, "myGrundfos": 3, "configs": 0, "totalEngage": 935, "epv": 0.44, "ecommerceLeads": 0}, "engagePIBySource": [{"source": "Google search", "visits": 1426, "video50": 10, "downloads": 217, "training": 4, "formSubmits": 14, "productSelection": 674, "marketingPermissions": 11, "myGrundfos": 3, "configs": 0, "totalEngage": 933, "epv": 0.65, "ecommerceLeads": 0}, {"source": "Display Networks", "visits": 364, "video50": 1, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 1, "epv": 0, "ecommerceLeads": 0}, {"source": "Facebook/Instagram", "visits": 356, "video50": 1, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 1, "epv": 0, "ecommerceLeads": 0}]},
+    "rollworks": {
+     "spend": 1891.25,
+     "impressions": 186679,
+     "clicks": 231,
+     "ctr": 0.124,
+     "cpc": 8.19,
+     "conversions": 33,
+     "breakdown": [
+      {
+       "type": "Website Retargeting",
+       "campaign": "HEATINS-DBDH_GCA_AMERICAS_AWARE_EST-4538-RE",
+       "status": "Running",
+       "spend": 377.78,
+       "impressions": 13314,
+       "clicks": 11,
+       "conversions": 15,
+       "ctr": 0.083,
+       "cpc": 34.34
+      },
+      {
+       "type": "Account Targeting",
+       "campaign": "HEATINS-DBDH_GCA_AMERICAS_AWARE_EST-4538",
+       "status": "Running",
+       "spend": 1513.47,
+       "impressions": 173365,
+       "clicks": 220,
+       "conversions": 18,
+       "ctr": 0.127,
+       "cpc": 6.88
+      }
+     ]
+    },
+    "googleAds": {
+     "campaign": "2026_DBS_DBSHEATINS_W01-53_GOOGLE_GCA_AMERICAS_AWARE_KAZOO_EST-4538-GCA",
+     "status": "Running",
+     "spend": 565.14,
+     "impressions": 8220,
+     "clicks": 2176,
+     "ctr": 26.47,
+     "cpc": 0.26,
+     "cpm": 68.75,
+     "conversions": 17653.04,
+     "convRate": 811.26,
+     "costPerConv": 0.03,
+     "searchImprShare": 19.33
+    },
+    "linkedin": {
+     "spend": 0,
+     "impressions": 0,
+     "clicks": 0
+    }
+   }
+  }
+ }
+};
 const META_EXTRA = {
  "2026-08": {
   "HVRINS": {
@@ -4469,6 +4810,7 @@ const GOOGLE_BOOST_CAMPAIGN = {USA:"2026_DBS_DBSBOOSTINS-DBDWPB_W01-36_GOOGLE_GP
 })();
 const GOOGLE_CONV_ACTIONS = ["All Form Fill TY Pages", "All Button Click Downloads", "Form Submit", "Marketing Permissions", "File Download", "GPC Successful Interactions", "Ecademy Successful Interactions", "Time on page 30 sec", "Video 50% view on webpage", "Scroll depth 50%", "Grundfos GO \u2013 Pump Tool (Android) installs", "Exit link clicked", "Video watch time 10 sec", "Video watch time 30 sec"];
 const GOOGLE_CONV_BY_ACTION = {"2026-01": {"HVRINS": {"USA": [4, 23.04, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], "CA": [0, 9.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "HEATINS": {"USA": [3.58, 43.35, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], "CA": [0, 3.34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "BOOSTING": {"USA": [0, 23.36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CA": [2, 7.04, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}}, "2026-02": {"HVRINS": {"USA": [73.65, 828.67, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0], "CA": [17.07, 337.56, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0]}, "HEATINS": {"USA": [53.92, 672.46, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0], "CA": [16.83, 222.87, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}, "BOOSTING": {"USA": [51.87, 703.56, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0], "CA": [10.62, 198.32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}}, "2026-03": {"HVRINS": {"USA": [56.72, 846.22, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0], "CA": [18.92, 420.26, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0]}, "HEATINS": {"USA": [61.1, 728.72, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0], "CA": [17.77, 193.53, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0]}, "BOOSTING": {"USA": [70.19, 838.39, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0], "CA": [22.36, 202.48, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0]}}, "2026-04": {"HVRINS": {"USA": [63.75, 777.54, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0], "CA": [12.5, 361.95, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0]}, "HEATINS": {"USA": [53.81, 333.75, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0], "CA": [24.96, 296.21, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0]}, "BOOSTING": {"USA": [64.26, 789.69, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0], "CA": [14.98, 229.17, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0]}}, "2026-05": {"HVRINS": {"USA": [61.01, 857.83, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0], "CA": [0.24, 17.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "HEATINS": {"USA": [4.07, 31.85, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], "CA": [3.0, 19.48, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}, "BOOSTING": {"USA": [53.31, 843.66, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0], "CA": [30.28, 265.26, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0]}}, "2026-06": {"HVRINS": {"USA": [54.26, 870.89, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0]}, "BOOSTING": {"USA": [62.19, 862.0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0], "CA": [21.44, 317.2, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0]}}, "2026-07": {"HVRINS": {"USA": [68.74, 949.49, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0]}, "BOOSTING": {"USA": [55.9, 841.85, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0], "CA": [18.0, 333.45, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0]}}, "2026-08": {"HVRINS": {"USA": [51.94, 890.68, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0], "CA": [29.08, 512.06, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0]}, "HEATINS": {"USA": [50.79, 386.13, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0]}, "BOOSTING": {"USA": [46.54, 799.05, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0]}}, "2026-09": {"HVRINS": {"USA": [20.54, 347.85, 11.01, 2, 387.47, 536.4, 11, 2338.84, 17, 2108.59, 5, 241.83, 13.33, 12], "CA": [9.73, 267.53, 5.6, 2, 279.05, 481.82, 27.1, 2223.88, 26.69, 2242.68, 0, 140.85, 35.69, 33.71]}, "HEATINS": {"USA": [20.48, 184.68, 5.19, 1, 346.71, 776.39, 16, 2424.15, 12, 2194.4, 3, 188.68, 12.33, 8], "CA": [0, 0, 0, 0, 7, 25, 1, 101.5, 1, 100, 0, 9.5, 1, 1]}}};
+GOOGLE_CONV_BY_ACTION["2026-10"] = {"HVRINS": {"USA": [0, 0, 50.35, 13.17, 1540.69, 3558.77, 134.43, 14051.6, 164.83, 13185.44, 0, 1373.11, 187.69, 137.36], "CA": [0, 0, 18.15, 2.0, 718.45, 1372.44, 31.08, 7090.57, 67.4, 6766.69, 0, 496.79, 75.8, 72.63]}, "HEATINS": {"USA": [0, 0, 48.83, 8.83, 1070.11, 2671.44, 146.54, 11487.67, 145.02, 10321.98, 0, 1227.23, 155.85, 149.94], "CA": [0, 0, 18.86, 6.0, 834.45, 1529.76, 57.32, 7381.97, 58.75, 7057.02, 0, 597.86, 55.18, 55.87]}};
 function googleConvCard(m, key, market){
   const mo = Object.keys(DATA_BY_MONTH).find(k=>DATA_BY_MONTH[k]===DATA);
   const arr = mo && GOOGLE_CONV_BY_ACTION[mo] && GOOGLE_CONV_BY_ACTION[mo][key] && GOOGLE_CONV_BY_ACTION[mo][key][market];
@@ -5644,6 +5986,7 @@ const HOMEOWNERS_DATA = {
 };
 
 Object.assign(HOMEOWNERS_DATA["2026-09"].meta, {reach:484366, frequency:1.38, cpm:2.02, linkClicks:777, linkCtr:0.12, costPerLinkClick:1.74, landingPageViews:360, postEngagement:3581});
+HOMEOWNERS_DATA["2026-10"] = {"meta": {"spend": 2093.77, "impressions": 978563, "clicksAll": 2002, "ctrAll": 0.205, "cpcAll": 1.05, "campaign": "2026_DBS_DBSBOOSTHOM_W36-49_META_GPU_AMERICAS_AWARE_KAZOO_NATIVE_EST-4710-HO-DS", "status": "Active", "reach": 686007, "frequency": 1.43, "cpm": 2.14, "linkClicks": 1326, "linkCtr": 0.14, "costPerLinkClick": 1.58, "landingPageViews": 651, "postEngagement": 10710}, "pinterest": {"campaign": "DBS Boosting - Homeowners", "status": "Active", "spend": 1324.09, "impressions": 111030, "clicks": 913, "ctr": 0.82, "cpc": 1.45, "cpm": 11.93, "outboundClicks": 875}, "youtube": {"campaign": "2026_DBS_DBSBOOSTHOM_W36-49_YOUTUBE_GPU_AMERICAS_AWARE_KAZOO_GOOGLEADS_EST-4710-HO-DS", "status": "Running", "spend": 1717.62, "impressions": 73185, "clicks": 112, "ctr": 0.15, "cpc": 15.34, "conversions": 11, "trueViewViews": 20929, "cpm": 23.47, "cpv": 0.08, "budgetTotal": 4358.98, "flight": "Sep 4, 2026 - Nov 30, 2026"}, "adobe": {"visits": 813, "newVisitsPct": 99, "uniqueVisitors": 806, "pvPerVisit": 0.0, "bounceRate": 92.62, "totalEngagePI": 15, "engagesPerVisit": 0.02, "lastTouch": [{"source": "Facebook/Instagram", "visits": 714, "newPct": 100, "uv": 712, "pv": 0, "bounce": 93.98, "engagePI": 9, "epv": 0.01}, {"source": "Pinterest", "visits": 99, "newPct": 95, "uv": 94, "pv": 0, "bounce": 82.83, "engagePI": 6, "epv": 0.06}], "engagePITotal": {"visits": 813, "video50": 14, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 1, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 15, "epv": 0.02, "ecommerceLeads": 2}, "engagePIBySource": [{"source": "Facebook/Instagram", "visits": 714, "video50": 8, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 1, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 9, "epv": 0.01, "ecommerceLeads": 2}, {"source": "Pinterest", "visits": 99, "video50": 6, "downloads": 0, "training": 0, "formSubmits": 0, "productSelection": 0, "marketingPermissions": 0, "myGrundfos": 0, "configs": 0, "totalEngage": 6, "epv": 0.06, "ecommerceLeads": 0}]}};
 
 let DATA;
 
@@ -5665,26 +6008,33 @@ const KPI_DATA = {
   },
   HVRINS: {
     USA: {
-      impressions:{est:7468628, actual:11373720}, webVisits:{est:26737, actual:49569}, someEngage:{est:511, actual:49},
-      budget:{budget:87179.49, spend:59385.29},
-      channels:[{name:"Google Ads", impr:101790, spend:8754.65},{name:"Meta", impr:5901842, spend:9666.79},{name:"RollWorks", impr:4873245, spend:39103.87},{name:"LinkedIn", impr:496843, spend:1859.98}]
+      impressions:{est:7468628, actual:12198869}, webVisits:{est:26737, actual:56208}, someEngage:{est:511, actual:50},
+      budget:{budget:87179.49, spend:65892.86},
+      channels:[{name:"Google Ads", impr:118290, spend:9830.46},{name:"Meta", impr:6257990, spend:10412.20},{name:"RollWorks", impr:5325746, spend:43790.22},{name:"LinkedIn", impr:496843, spend:1859.98}]
     },
     CA: {
-      impressions:{est:2019331, actual:3945132}, webVisits:{est:7851, actual:16191}, someEngage:{est:218, actual:20},
-      budget:{budget:17435.90, spend:11723.55},
-      channels:[{name:"Google Ads", impr:29720, spend:1622.12},{name:"Meta", impr:3272581, spend:3454.47},{name:"RollWorks", impr:642831, spend:6646.96}]
+      impressions:{est:2019331, actual:4776843}, webVisits:{est:7851, actual:18783}, someEngage:{est:218, actual:20},
+      budget:{budget:17435.90, spend:14798.85},
+      channels:[{name:"Google Ads", impr:38386, spend:2058.94},{name:"Meta", impr:3932777, spend:4511.60},{name:"RollWorks", impr:805680, spend:8228.31}]
+    }
+  },
+  HOMEOWNERS: {
+    USA: {
+      impressions:{est:3024300, actual:1957053}, webVisits:{est:8370, actual:1349}, someEngage:{est:168, actual:21},
+      budget:{budget:12858.97, spend:8694.08},
+      channels:[{name:"Pinterest", impr:188845, spend:2182.26},{name:"YouTube", impr:120650, spend:3067.26},{name:"Meta", impr:1647558, spend:3444.56}]
     }
   },
   HEATINS: {
     USA: {
-      impressions:{est:5911585, actual:4898229}, webVisits:{est:30397, actual:27543}, someEngage:{est:444, actual:7},
-      budget:{budget:65384.62, spend:32109.12},
-      channels:[{name:"Google Ads", impr:41642, spend:4259.77},{name:"Meta", impr:1392581, spend:4906.82},{name:"RollWorks", impr:2548839, spend:21082.58},{name:"LinkedIn", impr:915167, spend:1859.95}]
+      impressions:{est:5911585, actual:5740350}, webVisits:{est:30397, actual:34652}, someEngage:{est:444, actual:7},
+      budget:{budget:65384.62, spend:39380.79},
+      channels:[{name:"Google Ads", impr:118290, spend:5256.11},{name:"Meta", impr:1767680, spend:6137.94},{name:"RollWorks", impr:2939213, spend:26126.79},{name:"LinkedIn", impr:915167, spend:1859.95}]
     },
     CA: {
-      impressions:{est:1705402, actual:569233}, webVisits:{est:6702, actual:2961}, someEngage:{est:163, actual:14},
-      budget:{budget:15692.31, spend:5753.05},
-      channels:[{name:"Google Ads", impr:11901, spend:740.80},{name:"Meta", impr:240316, spend:1211.65},{name:"RollWorks", impr:317016, spend:3800.60}]
+      impressions:{est:1705402, actual:978318}, webVisits:{est:6702, actual:5111}, someEngage:{est:163, actual:16},
+      budget:{budget:15692.31, spend:8903.96},
+      channels:[{name:"Google Ads", impr:20121, spend:1305.94},{name:"Meta", impr:451502, spend:2014.20},{name:"RollWorks", impr:506695, spend:5583.82}]
     }
   }
 };
@@ -5692,19 +6042,19 @@ const KPI_DATA = {
 /* ==================== FULL-YEAR KPI FUNNEL OVERVIEW (from "Budget Worksheet - DBS", tab "KPIS '26", range P71:U82) ==================== */
 /* Static year-to-date snapshot across the whole DBS program — does not change with the month selector. */
 const FULL_YEAR_KPI_OVERVIEW = {
-  asOf: "Year-to-date through August 2026 (Budget Worksheet not yet updated for September)",
+  asOf: "Paid delivery through October 2026; Adobe-based actuals (Aware / Attract / Engage / Lead) as last updated in the Budget Worksheet (through August)",
   funnel: [
-    {stage:"AWARE", target:39904257, actual:43696419, paidDelivery:25650731, pctPaid:58.70},
+    {stage:"AWARE", target:39904257, actual:43696419, paidDelivery:33371251, pctPaid:76.37},
     {stage:"ATTRACT", target:1118075, actual:728960, paidDelivery:157651, pctPaid:21.63,
-      sub:{label:"Website & Product Selection Tool Visits", target:813665, actual:493474, paidDelivery:142079, pctPaid:28.67}},
+      sub:{label:"Website & Product Selection Tool Visits", target:813665, actual:493474, paidDelivery:168535, pctPaid:34.15}},
     {stage:"ENGAGE", target:481501, actual:395391, paidDelivery:77186, pctPaid:19.52,
       sub:{label:"Homeowner Engagements", target:91000, actual:32050, paidDelivery:0, pctPaid:0}},
     {stage:"LEAD", target:9170, actual:2647, paidDelivery:0, pctPaid:null}
   ],
   websiteVisitsByCampaign: {
     target:813665, actual:493474,
-    boosting:67393, heating:23168, hwr:51518,
-    pctBoosting:13.66, pctHeating:4.69, pctHwr:10.44
+    boosting:67393, heating:35343, hwr:65404,
+    pctBoosting:13.66, pctHeating:7.16, pctHwr:13.25
   }
 };
 
@@ -5712,6 +6062,13 @@ const FULL_YEAR_KPI_OVERVIEW = {
 const MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let CURRENT_MONTH_IDX; // set dynamically based on the selected reporting month
 const FLIGHT_DATA = {
+  HOMEOWNERS: {
+    USA: {
+      "Pinterest":[false,false,false,false,false,false,false,false,true,true,true,false],
+      "YouTube":[false,false,false,false,false,false,false,false,true,true,true,false],
+      "Meta":[false,false,false,false,false,false,false,false,true,true,true,false]
+    }
+  },
   BOOSTING: {
     USA: {
       "Paid Search":[true,true,true,true,true,true,true,true,false,false,false,false],
@@ -5754,6 +6111,22 @@ const FLIGHT_DATA = {
 
 const COLORS = { meta: "#126AF3", adobe: "#D13B3B", roll: "#8A94A6", google: "#188038" };
 
+const META_CONV = {"2026-01": {"HEATINS": {"USA": {"conversions": 1, "conversionsDetail": {"Content downloads": 1}, "otherEventSegment": 0}, "CA": {"conversions": 2, "conversionsDetail": {"Content downloads": 2}, "otherEventSegment": 0}}}, "2026-02": {"HVRINS": {"USA": {"conversions": 8, "conversionsDetail": {"Content downloads": 7, "Buy-now / distributor clicks": 1}, "otherEventSegment": 0}, "CA": {"conversions": 9, "conversionsDetail": {"Content downloads": 9}, "otherEventSegment": 2}}, "HEATINS": {"USA": {"conversions": 18, "conversionsDetail": {"Content downloads": 17, "Marketing permission": 1}, "otherEventSegment": 0}, "CA": {"conversions": 2, "conversionsDetail": {"Content downloads": 1, "Buy-now / distributor clicks": 1}, "otherEventSegment": 0}}}, "2026-03": {"HVRINS": {"USA": {"conversions": 9, "conversionsDetail": {"Content downloads": 9}, "otherEventSegment": 0}, "CA": {"conversions": 8, "conversionsDetail": {"Content downloads": 8}, "otherEventSegment": 0}}, "HEATINS": {"USA": {"conversions": 11, "conversionsDetail": {"Content downloads": 7, "Buy-now / distributor clicks": 4}, "otherEventSegment": 1}}}, "2026-04": {"HVRINS": {"USA": {"conversions": 3, "conversionsDetail": {"Content downloads": 3}, "otherEventSegment": 0}}, "HEATINS": {"USA": {"conversions": 1, "conversionsDetail": {"Buy-now / distributor clicks": 1}, "otherEventSegment": 0}}, "BOOSTING": {"CA": {"conversions": 13, "conversionsDetail": {"Content downloads": 11, "eAcademy tasks completed": 2}, "otherEventSegment": 0}, "USA": {"conversions": 6, "conversionsDetail": {"Content downloads": 6}, "otherEventSegment": 0}}}, "2026-05": {"HVRINS": {"USA": {"conversions": 2, "conversionsDetail": {"Content downloads": 2}, "otherEventSegment": 0}}, "BOOSTING": {"CA": {"conversions": 4, "conversionsDetail": {"Content downloads": 4}, "otherEventSegment": 0}, "USA": {"conversions": 1, "conversionsDetail": {"Content downloads": 1}, "otherEventSegment": 0}}}, "2026-06": {"HVRINS": {"USA": {"conversions": 1, "conversionsDetail": {"Content downloads": 1}, "otherEventSegment": 0}}}, "2026-07": {"HVRINS": {"USA": {"conversions": 3, "conversionsDetail": {"Content downloads": 3}, "otherEventSegment": 0}}}, "2026-08": {"HVRINS": {"USA": {"conversions": 3, "conversionsDetail": {"Content downloads": 2, "Buy-now / distributor clicks": 1}, "otherEventSegment": 0}, "CA": {"conversions": 6, "conversionsDetail": {"Content downloads": 6}, "otherEventSegment": 1}}, "HEATINS": {"USA": {"conversions": 9, "conversionsDetail": {"Content downloads": 9}, "otherEventSegment": 1}}}, "2026-09": {"HOMEOWNERS": {"USA": {"conversions": 2, "conversionsDetail": {"Buy-now / distributor clicks": 2}, "otherEventSegment": 0}}, "HVRINS": {"CA": {"conversions": 7, "conversionsDetail": {"Content downloads": 7}, "otherEventSegment": 0}}, "HEATINS": {"USA": {"conversions": 6, "conversionsDetail": {"Content downloads": 6}, "otherEventSegment": 0}, "CA": {"conversions": 4, "conversionsDetail": {"Content downloads": 4}, "otherEventSegment": 0}}}, "2026-10": {"HOMEOWNERS": {"USA": {"conversions": 3, "conversionsDetail": {"Content downloads": 2, "Buy-now / distributor clicks": 1}, "otherEventSegment": 0}}, "HVRINS": {"USA": {"conversions": 1, "conversionsDetail": {"Content downloads": 1}, "otherEventSegment": 0}, "CA": {"conversions": 5, "conversionsDetail": {"Content downloads": 5}, "otherEventSegment": 1}}, "HEATINS": {"USA": {"conversions": 8, "conversionsDetail": {"Content downloads": 8}, "otherEventSegment": 74}, "CA": {"conversions": 11, "conversionsDetail": {"Content downloads": 11}, "otherEventSegment": 0}}}};
+window.mergeMetaConv=function(){
+  const RAN_KEYS=["BOOSTING","HVRINS","HEATINS"];
+  Object.keys(DATA_BY_MONTH).forEach(mo=>{
+    RAN_KEYS.forEach(c=>{ const camp=DATA_BY_MONTH[mo][c]; if(!camp||!camp.markets) return;
+      Object.keys(camp.markets).forEach(mk=>{ const m=camp.markets[mk]; if(!m||!m.meta||!(m.meta.spend>0)) return;
+        const e=(META_CONV[mo]&&META_CONV[mo][c]&&META_CONV[mo][c][mk])||{conversions:0,conversionsDetail:{},otherEventSegment:0};
+        Object.assign(m.meta,e); m.meta.costPerConversion = e.conversions>0 ? m.meta.spend/e.conversions : null; });
+    });
+    const h=(typeof HOMEOWNERS_DATA!=="undefined")&&HOMEOWNERS_DATA[mo];
+    if(h&&h.meta&&h.meta.spend>0){ const e=(META_CONV[mo]&&META_CONV[mo].HOMEOWNERS&&META_CONV[mo].HOMEOWNERS.USA)||{conversions:0,conversionsDetail:{},otherEventSegment:0}; Object.assign(h.meta,e); h.meta.costPerConversion=e.conversions>0?h.meta.spend/e.conversions:null; }
+  });
+};
+window.mergeMetaConv();
+function metaConvCells(m){ if(m.conversions===undefined) return ""; return `<div class="metric-cell"><div class="lbl">Conversions</div><div class="val">${fmtNum(m.conversions)}</div></div><div class="metric-cell"><div class="lbl">Cost / Conversion</div><div class="val">${m.costPerConversion?fmtCurrency(m.costPerConversion):"—"}</div></div>`; }
+function metaConvNote(m){ if(m.conversions===undefined) return ""; const d=Object.entries(m.conversionsDetail||{}).map(([k,v])=>k+": "+v).join(" · "); return `<div class="pending-note" style="font-style:normal;">ℹ️ Meta conversions = custom conversion events recorded in Ads Manager (${d||"none recorded this period"}). Passive engagement events (scroll depth, time on page, video milestones) are excluded.</div>`; }
 function fmtNum(v, decimals){
   if(v===undefined||v===null) return "—";
   if(decimals!==undefined) return Number(v).toLocaleString(undefined,{minimumFractionDigits:decimals,maximumFractionDigits:decimals});
@@ -5959,7 +6332,8 @@ function renderMarket(key, market){
         <div class="metric-cell"><div class="lbl">Cost / Link Click</div><div class="val">${fmtCurrency(m.meta.costPerLinkClick)}</div></div>
         <div class="metric-cell"><div class="lbl">Landing Page Views</div><div class="val">${fmtNum(m.meta.landingPageViews)}</div></div>
         <div class="metric-cell"><div class="lbl">Post Engagements</div><div class="val">${fmtNum(m.meta.postEngagement)}</div></div>
-      </div>
+        ${metaConvCells(m.meta)}
+      </div>${metaConvNote(m.meta)}
     </div>`;
   html += adobeMatchCard("Adobe — Facebook/Instagram (Last Touch)", metaAdobeRow);
   html += `</div>`;
@@ -6172,59 +6546,114 @@ function renderMarket(key, market){
   }
 }
 
+
+/* Homeowners "Designing Spaces" plan — budgets (net of commission) and full-flight estimates (derived from September actual delivery rates). */
+const HOMEOWNER_SHEET = {asOf:"2026-10", webVisits:{est:8370, actual:1349}, someEngage:{est:168, actual:21}};
+const HOMEOWNER_PLAN = {
+  pinterest:{label:"Pinterest", budget:3269.23, impressions:280443, clicks:2476},
+  youtube:{label:"YouTube", budget:4358.97, impressions:153299, clicks:568, views:104530},
+  meta:{label:"Meta", budget:5230.77, impressions:2590602, clicks:5321}
+};
+function homeownerCumulative(){
+  const out={meta:{spend:0,impressions:0,clicks:0},pinterest:{spend:0,impressions:0,clicks:0},youtube:{spend:0,impressions:0,clicks:0,views:0}};
+  MONTH_KEYS.slice(0, MONTH_KEYS.indexOf(CURRENT_MONTH_KEY)+1).forEach(mk=>{
+    const h=HOMEOWNERS_DATA[mk]; if(!h) return;
+    out.meta.spend+=h.meta.spend; out.meta.impressions+=h.meta.impressions; out.meta.clicks+=h.meta.clicksAll;
+    out.pinterest.spend+=h.pinterest.spend; out.pinterest.impressions+=h.pinterest.impressions; out.pinterest.clicks+=h.pinterest.clicks;
+    out.youtube.spend+=h.youtube.spend; out.youtube.impressions+=h.youtube.impressions; out.youtube.clicks+=h.youtube.clicks; out.youtube.views+=(h.youtube.trueViewViews||0);
+  });
+  return out;
+}
+function homeownerEstimateSection(){
+  const c=homeownerCumulative(), P=HOMEOWNER_PLAN;
+  const tot={impressions:P.pinterest.impressions+P.youtube.impressions+P.meta.impressions, clicks:P.pinterest.clicks+P.youtube.clicks+P.meta.clicks, budget:P.pinterest.budget+P.youtube.budget+P.meta.budget};
+  const act={impressions:c.pinterest.impressions+c.youtube.impressions+c.meta.impressions, clicks:c.pinterest.clicks+c.youtube.clicks+c.meta.clicks, spend:c.pinterest.spend+c.youtube.spend+c.meta.spend};
+  const grp=(title,cards)=>`<div class="kpi-group-title" style="font-weight:700;margin:14px 0 8px;">${title}</div><div class="platform-row" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr));">${cards.join("")}</div>`;
+  return `<div class="section-title">📊 Plan vs. Actual by Channel — Flight to Date through ${MONTH_META[CURRENT_MONTH_KEY].short}<span class="source-tag internal">Plan</span></div>
+    <div class="pending-note" style="font-style:normal;margin-bottom:6px;">Estimates cover the full flight (Sep 4 – Nov 30, 2026) at the reduced budgets after commission: Pinterest ${fmtCurrency(P.pinterest.budget)}, YouTube ${fmtCurrency(P.youtube.budget)}, Meta ${fmtCurrency(P.meta.budget)}. Actuals are cumulative from launch through the selected month.</div>
+    ${grp("Total — Meta + Pinterest + YouTube",[kpiProgressCard("Impressions",tot.impressions,act.impressions),kpiProgressCard("Clicks",tot.clicks,act.clicks),kpiProgressCard("Budget Spend",tot.budget,act.spend,true)])}
+    ${grp("Meta",[kpiProgressCard("Impressions",P.meta.impressions,c.meta.impressions),kpiProgressCard("Clicks (All)",P.meta.clicks,c.meta.clicks),kpiProgressCard("Budget Spend",P.meta.budget,c.meta.spend,true)])}
+    ${grp("Pinterest",[kpiProgressCard("Impressions",P.pinterest.impressions,c.pinterest.impressions),kpiProgressCard("Clicks",P.pinterest.clicks,c.pinterest.clicks),kpiProgressCard("Budget Spend",P.pinterest.budget,c.pinterest.spend,true)])}
+    ${grp("YouTube",[kpiProgressCard("Impressions",P.youtube.impressions,c.youtube.impressions),kpiProgressCard("Clicks",P.youtube.clicks,c.youtube.clicks),kpiProgressCard("TrueView Views",P.youtube.views,c.youtube.views),kpiProgressCard("Budget Spend",P.youtube.budget,c.youtube.spend,true)])}`;
+}
+
 function buildHomeownersPanel(){
   const panel = document.getElementById("panel-HOMEOWNERS");
   if(!panel) return;
+  const key="HOMEOWNERS", market="USA";
   const h = HOMEOWNERS_DATA[CURRENT_MONTH_KEY];
-  let html = `
-    <div class="campaign-title-block">
-      <div class="brand-chip"><span class="logo-badge"><img src="${BRAND_LOGO_SRC}" alt="Grundfos logo" class="brand-chip-logo"></span>GRUNDFOS</div>
-      <h2>Homeowners</h2>
-      <p>United States only · Adobe campaign: DBS Boosting - Homeowner · ${PERIOD}</p>
-    </div>`;
+  panel.innerHTML = `
+    <div class="market-toggle-row">
+      <div class="campaign-title-block">
+        <div class="brand-chip"><span class="logo-badge"><img src="${BRAND_LOGO_SRC}" alt="Grundfos logo" class="brand-chip-logo"></span>GRUNDFOS</div>
+        <h2>Homeowners</h2>
+        <p>Adobe campaign: DBS Boosting - Homeowner · ${PERIOD}</p>
+      </div>
+      <div class="market-toggle"><button class="market-btn active" data-market="USA">United States</button></div>
+    </div>
+    <div id="content-${key}"></div>`;
+  const container = document.getElementById("content-"+key);
   if(!h){
-    html += `<div class="status-banner grey"><span>ℹ️</span><div>The Homeowners campaign launched in September 2026, so there is no data for ${PERIOD}.</div></div>`;
-    panel.innerHTML = html; return;
+    container.innerHTML = `<div class="status-banner grey"><span>⛔</span><div><b>Homeowners did not run in United States during ${PERIOD}.</b><br>The Homeowners campaign launched in September 2026, so there is no data for this period.</div></div>` + renderKpiSection(key,market) + renderFlightSection(key,market);
+    return;
   }
-  const m=h.meta, p=h.pinterest, y=h.youtube, a=h.adobe;
-  const spend=m.spend+p.spend+y.spend, imps=m.impressions+p.impressions+y.impressions;
-  const clicks=m.clicksAll+p.clicks+y.clicks;
-  html += `<div class="section-title">${PERIOD} — Homeowners Totals (Meta + Pinterest + YouTube)<span class="source-tag">UI + Adobe</span></div>
-    <div class="kpi-row">
-      <div class="kpi-card"><div class="kpi-label">Total UI Spend</div><div class="kpi-value">${fmtCurrency(spend)}</div></div>
-      <div class="kpi-card"><div class="kpi-label">Total Impressions</div><div class="kpi-value">${fmtNum(imps)}</div></div>
-      <div class="kpi-card"><div class="kpi-label">Total UI Clicks</div><div class="kpi-value">${fmtNum(clicks)}</div></div>
-      <div class="kpi-card"><div class="kpi-label">Adobe Visits</div><div class="kpi-value">${fmtNum(a.visits)}</div></div>
-      <div class="kpi-card"><div class="kpi-label">Adobe ENGAGE PI's</div><div class="kpi-value">${fmtNum(a.totalEngagePI)}</div></div>
-    </div>`;
+  const m=h.meta, pin=h.pinterest, yt=h.youtube, ad=h.adobe;
+  const hasAdobe = ad && !ad.pending;
+  const adobeRow=(pats)=>hasAdobe ? (ad.lastTouch.find(r=>pats.some(x=>r.source.toLowerCase().includes(x)))||null) : null;
   const cell=(l,v)=>`<div class="metric-cell"><div class="lbl">${l}</div><div class="val">${v}</div></div>`;
-  const adobeRow=(pat)=>a.lastTouch.find(r=>r.source.toLowerCase().includes(pat));
-  const adobeCard=(label,row)=>row?`<div class="platform-card adobe"><div class="head">📈 ${label}<span class="source-tag on-dark">Adobe</span></div><div class="metric-grid">
-      ${cell("Visits",fmtNum(row.visits))}${cell("% New",row.newPct+"%")}${cell("Unique Visitors",fmtNum(row.uv))}${cell("PV / Visit",fmtDec(row.pv))}${cell("Bounce Rate",fmtPct(row.bounce))}${cell("Total ENGAGE PI's",fmtNum(row.engagePI))}</div></div>`
-    :`<div class="platform-card adobe"><div class="head">📈 ${label}<span class="source-tag on-dark">Adobe</span></div><div class="pending-note">No matching Adobe last-touch row for this period.</div></div>`;
+  function adobeMatchCard(headLabel,row,proxyNote){
+    if(row) return `<div class="platform-card adobe"><div class="head">📈 ${headLabel}<span class="source-tag on-dark">Adobe</span></div><div class="metric-grid">
+      ${cell("Visits",fmtNum(row.visits))}${cell("% New",row.newPct+"%")}${cell("Unique Visitors",fmtNum(row.uv))}${cell("PV / Visit",fmtDec(row.pv))}${cell("Bounce Rate",fmtPct(row.bounce))}${cell("Total ENGAGE PI's",fmtNum(row.engagePI))}</div>
+      ${proxyNote?`<div class="pending-note" style="font-style:normal;">ℹ️ ${proxyNote}</div>`:""}</div>`;
+    return `<div class="platform-card adobe"><div class="head">📈 ${headLabel}<span class="source-tag on-dark">Adobe</span></div><div class="pending-note">⏳ ${hasAdobe?"No matching Adobe last-touch row recorded for this source during this period.":"Adobe data pending for this campaign/market."}</div></div>`;
+  }
+  let html = renderKpiSection(key,market) + renderFlightSection(key,market);
+
+  // Meta
   html += `<div class="section-title"><span class="dot meta"></span><span class="dot adobe"></span> Channel: Meta — UI vs Adobe (Facebook/Instagram)</div><div class="platform-row channel-block">
     <div class="platform-card meta"><div class="head">📊 Meta (act 1057546444579572)<span class="source-tag on-dark">UI</span></div><div class="metric-grid">
-      ${cell("Amount Spent",fmtCurrency(m.spend))}${cell("Impressions",fmtNum(m.impressions))}${cell("Reach",fmtNum(m.reach))}${cell("Frequency",fmtDec(m.frequency))}${cell("Clicks (All)",fmtNum(m.clicksAll))}${cell("CTR (All)",fmtPct(m.ctrAll))}${cell("CPC (All)",fmtCurrency(m.cpcAll))}${cell("CPM",fmtCurrency(m.cpm))}${cell("Link Clicks",fmtNum(m.linkClicks))}${cell("Cost / Link Click",fmtCurrency(m.costPerLinkClick))}${cell("Landing Page Views",fmtNum(m.landingPageViews))}${cell("Post Engagements",fmtNum(m.postEngagement))}</div></div>
-    ${adobeCard("Adobe — Facebook/Instagram",adobeRow("facebook"))}</div>`;
+      ${cell("Amount Spent",fmtCurrency(m.spend))}${cell("Impressions",fmtNum(m.impressions))}${cell("Reach",fmtNum(m.reach))}${cell("Frequency",m.frequency?m.frequency.toFixed(2):"—")}${cell("Clicks (all)",fmtNum(m.clicksAll))}${cell("CTR (all)",fmtPct(m.ctrAll))}${cell("CPC (all)",fmtCurrency(m.cpcAll))}${cell("CPM",fmtCurrency(m.cpm))}${cell("Link Clicks",fmtNum(m.linkClicks))}${cell("Cost / Link Click",fmtCurrency(m.costPerLinkClick))}${cell("Landing Page Views",fmtNum(m.landingPageViews))}${cell("Post Engagements",fmtNum(m.postEngagement))}${metaConvCells(m)}</div>${metaConvNote(m)}
+      <div class="pending-note" style="font-style:normal;">ℹ️ Campaign: ${m.campaign} — Status: ${m.status}</div></div>
+    ${adobeMatchCard("Adobe — Facebook/Instagram (Last Touch)",adobeRow(["facebook","instagram"]))}</div>`;
+  // Pinterest
   html += `<div class="section-title"><span class="dot pinterest"></span><span class="dot adobe"></span> Channel: Pinterest — UI vs Adobe</div><div class="platform-row channel-block">
     <div class="platform-card pinterest"><div class="head">📌 Pinterest (advertiser 549770493273)<span class="source-tag on-dark">UI</span></div><div class="metric-grid">
-      ${cell("Spend",fmtCurrency(p.spend))}${cell("Impressions",fmtNum(p.impressions))}${cell("Pin Clicks",fmtNum(p.clicks))}${cell("Outbound Clicks",fmtNum(p.outboundClicks))}${cell("CTR",fmtPct(p.ctr))}${cell("CPC",fmtCurrency(p.cpc))}</div></div>
-    ${adobeCard("Adobe — Pinterest",adobeRow("pinterest"))}</div>`;
-  html += `<div class="section-title"><span class="dot youtube"></span> Channel: YouTube — Google Ads<span class="source-tag">UI</span></div><div class="platform-row channel-block">
+      ${cell("Spend",fmtCurrency(pin.spend))}${cell("Impressions",fmtNum(pin.impressions))}${cell("Pin Clicks",fmtNum(pin.clicks))}${cell("Outbound Clicks",fmtNum(pin.outboundClicks))}${cell("CTR",fmtPct(pin.ctr))}${cell("CPC",fmtCurrency(pin.cpc))}${cell("CPM",fmtCurrency(pin.cpm))}</div>
+      <div class="pending-note" style="font-style:normal;">ℹ️ Campaign: ${pin.campaign} — Status: ${pin.status}</div></div>
+    ${adobeMatchCard("Adobe — Pinterest (Last Touch)",adobeRow(["pinterest"]))}</div>`;
+  // YouTube
+  html += `<div class="section-title"><span class="dot youtube"></span><span class="dot adobe"></span> Channel: YouTube — UI vs Adobe (Google Ads Video)</div><div class="platform-row channel-block">
     <div class="platform-card youtube"><div class="head">▶️ YouTube (Google Ads, ocid 124373305)<span class="source-tag on-dark">UI</span></div><div class="metric-grid">
-      ${cell("Cost",fmtCurrency(y.spend))}${cell("Impressions",fmtNum(y.impressions))}${cell("Clicks",fmtNum(y.clicks))}${cell("CTR",fmtPct(y.ctr))}${cell("Avg. CPC",fmtCurrency(y.cpc))}${cell("TrueView Views",fmtNum(y.trueViewViews))}${cell("Avg. CPM",fmtCurrency(y.cpm))}${cell("Conversions",fmtNum(y.conversions))}</div>
-      <div class="pending-note" style="font-style:normal;">ℹ️ ${y.campaign}. Flight ${y.flight}; total budget ${fmtCurrency(y.budgetTotal)}. Adobe has no separate YouTube last-touch source this month (a "Youtube" source can appear in Adobe once traffic is attributed).</div></div></div>`;
-  html += `<div class="section-title"><span class="dot adobe"></span> Adobe Analytics — Homeowners (Content Performance Dashboard)<span class="source-tag">Adobe</span></div>
-    <div class="platform-card adobe"><div class="head">📈 Overall — DBS Boosting - Homeowner<span class="source-tag on-dark">Adobe</span></div><div class="metric-grid">
-      ${cell("Visits",fmtNum(a.visits))}${cell("% New Visits",a.newVisitsPct+"%")}${cell("Unique Visitors",fmtNum(a.uniqueVisitors))}${cell("PV / Visit",fmtDec(a.pvPerVisit))}${cell("Bounce Rate",fmtPct(a.bounceRate))}${cell("Total ENGAGE PI's",fmtNum(a.totalEngagePI))}${cell("ENGAGES / Visit",fmtDec(a.engagesPerVisit))}</div></div>
-    <div class="section-title">Last Touch Campaign Source</div>
-    <table class="data-table"><thead><tr><th>Source</th><th>Visits</th><th>% New</th><th>Unique Visitors</th><th>PV / Visit</th><th>Bounce Rate</th><th>ENGAGE PI's</th><th>ENGAGES / Visit</th></tr></thead><tbody>
-    ${a.lastTouch.map(r=>`<tr><td>${r.source}</td><td>${fmtNum(r.visits)}</td><td>${r.newPct}%</td><td>${fmtNum(r.uv)}</td><td>${fmtDec(r.pv)}</td><td>${fmtPct(r.bounce)}</td><td>${fmtNum(r.engagePI)}</td><td>${fmtDec(r.epv)}</td></tr>`).join("")}</tbody></table>
-    <div class="section-title">Engage PI Breakdown</div>
-    <table class="data-table"><thead><tr><th>Source</th><th>Visits</th><th>50% Video</th><th>Downloads</th><th>Trainings</th><th>Form Submits</th><th>Product Selection</th><th>Mktg Permissions</th><th>MyGrundfos</th><th>Configs</th><th>Total ENGAGE PI's</th><th>eCommerce Leads</th></tr></thead><tbody>
-    ${a.engagePIBySource.map(r=>`<tr><td>${r.source}</td><td>${fmtNum(r.visits)}</td><td>${fmtNum(r.video50)}</td><td>${fmtNum(r.downloads)}</td><td>${fmtNum(r.training)}</td><td>${fmtNum(r.formSubmits)}</td><td>${fmtNum(r.productSelection)}</td><td>${fmtNum(r.marketingPermissions)}</td><td>${fmtNum(r.myGrundfos)}</td><td>${fmtNum(r.configs)}</td><td>${fmtNum(r.totalEngage)}</td><td>${fmtNum(r.ecommerceLeads)}</td></tr>`).join("")}
-    <tr><td><b>Total</b></td><td>${fmtNum(a.visits)}</td><td>${fmtNum(a.engagePITotal.video50)}</td><td>${fmtNum(a.engagePITotal.downloads)}</td><td>${fmtNum(a.engagePITotal.training)}</td><td>${fmtNum(a.engagePITotal.formSubmits)}</td><td>${fmtNum(a.engagePITotal.productSelection)}</td><td>${fmtNum(a.engagePITotal.marketingPermissions)}</td><td>${fmtNum(a.engagePITotal.myGrundfos)}</td><td>${fmtNum(a.engagePITotal.configs)}</td><td>${fmtNum(a.engagePITotal.totalEngage)}</td><td>${fmtNum(a.engagePITotal.ecommerceLeads)}</td></tr></tbody></table>`;
-  panel.innerHTML = html;
+      ${cell("Cost",fmtCurrency(yt.spend))}${cell("Impressions",fmtNum(yt.impressions))}${cell("Clicks",fmtNum(yt.clicks))}${cell("CTR",fmtPct(yt.ctr))}${cell("Avg. CPC",fmtCurrency(yt.cpc))}${cell("TrueView Views",fmtNum(yt.trueViewViews))}${cell("Avg. CPM",fmtCurrency(yt.cpm))}${cell("Conversions",fmtNum(yt.conversions))}</div>
+      <div class="pending-note" style="font-style:normal;">ℹ️ Campaign: ${yt.campaign} — Status: ${yt.status}. Flight ${yt.flight}; total budget ${fmtCurrency(yt.budgetTotal)}.</div></div>
+    ${adobeMatchCard("Adobe — YouTube (Last Touch)",adobeRow(["youtube"]), adobeRow(["youtube"])?null:null)}</div>`;
+
+  // Adobe all sources
+  html += `<div class="section-title"><span class="dot adobe"></span> Adobe Analytics — All Sources (Trusted Source)<span class="source-tag adobe">Adobe</span></div>`;
+  if(hasAdobe){
+    html += `<div class="platform-row"><div class="platform-card adobe" style="grid-column:1/-1"><div class="head">📈 Content Performance Dashboard (GPU/GCA | Web | PROD)<span class="source-tag on-dark">Adobe</span></div><div class="metric-grid">
+      ${cell("Visits",fmtNum(ad.visits))}${cell("Unique Visitors",fmtNum(ad.uniqueVisitors))}${cell("% New Visits",ad.newVisitsPct+"%")}${cell("Page Views / Visit",fmtDec(ad.pvPerVisit))}${cell("Bounce Rate",fmtPct(ad.bounceRate))}${cell("Total ENGAGE PI's",fmtNum(ad.totalEngagePI))}</div></div></div>
+    <div class="chart-row"><div class="chart-container"><h3>Last Touch Campaign Source<span class="source-tag adobe">Adobe</span></h3><div class="sub">Visits vs Total ENGAGE PI's by source</div><canvas id="chart-source-${key}-${market}"></canvas></div>
+    <div class="chart-container"><h3>Engage PI Breakdown<span class="source-tag adobe">Adobe</span></h3><div class="sub">Composition of engagement actions (campaign total)</div><canvas id="chart-engage-${key}-${market}"></canvas></div></div>
+    <div class="table-section"><h3>Last Touch Campaign Source — Detail<span class="source-tag adobe">Adobe</span></h3><table class="data-table"><thead><tr><th>Source</th><th>Visits</th><th>% New</th><th>Unique Visitors</th><th>PV/Visit</th><th>Bounce Rate</th><th>Total ENGAGE PI's</th><th>Engages/Visit</th></tr></thead><tbody>
+      ${ad.lastTouch.map(r=>`<tr><td>${r.source}</td><td>${fmtNum(r.visits)}</td><td>${r.newPct}%</td><td>${fmtNum(r.uv)}</td><td>${fmtDec(r.pv)}</td><td>${fmtPct(r.bounce)}</td><td>${fmtNum(r.engagePI)}</td><td>${fmtDec(r.epv)}</td></tr>`).join("")}
+      <tr class="total-row"><td>Total</td><td>${fmtNum(ad.visits)}</td><td>${ad.newVisitsPct}%</td><td>${fmtNum(ad.uniqueVisitors)}</td><td>${fmtDec(ad.pvPerVisit)}</td><td>${fmtPct(ad.bounceRate)}</td><td>${fmtNum(ad.totalEngagePI)}</td><td>${fmtDec(ad.engagesPerVisit)}</td></tr></tbody></table></div>
+    <div class="table-section"><h3>Engage PI Breakdown — by Source<span class="source-tag adobe">Adobe</span></h3><table class="data-table"><thead><tr><th>Source</th><th>Visits</th><th>50% Video</th><th>Content Downloads</th><th>Online Trainings</th><th>Form Submits</th><th>Product Selection</th><th>Marketing Perm.</th><th>MyGrundfos</th><th>Configs</th><th>Total ENGAGE</th><th>eComm Leads</th></tr></thead><tbody>
+      ${ad.engagePIBySource.map(r=>`<tr><td>${r.source}</td><td>${fmtNum(r.visits)}</td><td>${fmtNum(r.video50)}</td><td>${fmtNum(r.downloads)}</td><td>${fmtNum(r.training)}</td><td>${fmtNum(r.formSubmits)}</td><td>${fmtNum(r.productSelection)}</td><td>${fmtNum(r.marketingPermissions)}</td><td>${fmtNum(r.myGrundfos)}</td><td>${fmtNum(r.configs)}</td><td>${fmtNum(r.totalEngage)}</td><td>${fmtNum(r.ecommerceLeads)}</td></tr>`).join("")}
+      <tr class="total-row"><td>Total</td><td>${fmtNum(ad.visits)}</td><td>${fmtNum(ad.engagePITotal.video50)}</td><td>${fmtNum(ad.engagePITotal.downloads)}</td><td>${fmtNum(ad.engagePITotal.training)}</td><td>${fmtNum(ad.engagePITotal.formSubmits)}</td><td>${fmtNum(ad.engagePITotal.productSelection)}</td><td>${fmtNum(ad.engagePITotal.marketingPermissions)}</td><td>${fmtNum(ad.engagePITotal.myGrundfos)}</td><td>${fmtNum(ad.engagePITotal.configs)}</td><td>${fmtNum(ad.engagePITotal.totalEngage)}</td><td>${fmtNum(ad.engagePITotal.ecommerceLeads)}</td></tr></tbody></table></div>`;
+  } else {
+    html += `<div class="platform-row"><div class="platform-card adobe" style="grid-column:1/-1"><div class="head">📈 Content Performance Dashboard<span class="source-tag on-dark">Adobe</span></div><div class="pending-note">⏳ Pending — Adobe data for ${PERIOD} has not been pulled yet.</div></div></div>`;
+  }
+  container.innerHTML = html;
+
+  if(hasAdobe){
+    const sid=`chart-source-${key}-${market}`, eid=`chart-engage-${key}-${market}`;
+    if(chartRegistry[sid]) chartRegistry[sid].destroy();
+    if(chartRegistry[eid]) chartRegistry[eid].destroy();
+    chartRegistry[sid]=new Chart(document.getElementById(sid).getContext("2d"),{type:"bar",data:{labels:ad.lastTouch.map(r=>r.source),datasets:[{label:"Visits",data:ad.lastTouch.map(r=>r.visits),backgroundColor:COLORS.adobe+"CC",borderRadius:4},{label:"Total ENGAGE PI's",data:ad.lastTouch.map(r=>r.engagePI),backgroundColor:COLORS.meta+"CC",borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"top",labels:{usePointStyle:true,padding:16}}},scales:{y:{beginAtZero:true,ticks:{callback:v=>fmtNum(v)}}}}});
+    const t=ad.engagePITotal;
+    chartRegistry[eid]=new Chart(document.getElementById(eid).getContext("2d"),{type:"doughnut",data:{labels:["50% Video","Downloads","Training","Form Submits","Product Selection","MyGrundfos","eComm Leads"],datasets:[{data:[t.video50,t.downloads,t.training,t.formSubmits,t.productSelection,t.myGrundfos,t.ecommerceLeads],backgroundColor:["#126AF3","#D13B3B","#F2A93B","#1E8E5A","#8172B3","#0A1F44","#8A94A6"],borderColor:"#fff",borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,cutout:"55%",plugins:{legend:{position:"right",labels:{usePointStyle:true,padding:10,font:{size:11}}}}}});
+  }
 }
 
 function renderAll(){
